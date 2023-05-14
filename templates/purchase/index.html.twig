@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Purchase Product
+{% endblock %}
+
+{% block body %}
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="mb-3">
+        Price (with TAX)
+      </h4>
+
+      <div class="form-group text-start mb-4">
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <h6>
+              Product Price
+            </h6>
+            <span class="text-muted" id="label_price">
+              $ {{ prices.product }}
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <h6>
+              TAX
+            </h6>
+            <span class="text-muted" id="label_tax">$ {{ prices.tax }}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <h6>
+              Total
+            </h6>
+            <span class="text-muted" id="label_total">
+              $ {{ prices.total }}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">
+        Product
+      </h4>
+      {{ form(form) }}
+    </div>
+  </div>
+
+  {% if errorMessage %}
+    <div class="alert alert-danger mt-5 p-2" role="alert">
+      {{ errorMessage }}
+    </div>
+  {% endif %}
+{% endblock %}

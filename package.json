@@ -1,0 +1,17 @@
+{
+  "name": "shopping_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --loglevel error --write \"**/*.+(php|twig|json|js|css)\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.19.4",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "prettier-plugin-twig-melody": "^0.4.6"
+  }
+}

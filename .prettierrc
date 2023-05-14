@@ -1,0 +1,16 @@
+{
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "printWidth": 110,
+
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "es5",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "quoteProps": "consistent",
+  "arrowParens": "always",
+  "proseWrap": "always",
+
+  "plugins": ["./node_modules/prettier-plugin-twig-melody"]
+}
